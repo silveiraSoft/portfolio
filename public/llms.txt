@@ -1,0 +1,70 @@
+# Adalberto Silveira Napoles — Senior Software Engineer
+
+> Portfolio: https://adalbertosilveiranapoles.dev
+> Contact: adalbertosn1982@gmail.com
+> LinkedIn: https://linkedin.com/in/adalbertosilveiranapoles
+> GitHub: https://github.com/silveiraSoft
+> Location: Hialeah, FL 33015 (open to remote)
+
+## Summary
+
+Senior Software Engineer with 18+ years of experience designing and delivering enterprise-grade, cloud-native applications. Specialized in Java (8–25), Spring Boot, Spring WebFlux, and event-driven microservices on AWS — handling 50,000+ daily transactions at 99.9% uptime in production financial and identity-validation platforms.
+
+Active AI practitioner: built an autonomous job-application agent using Python and the Claude/Anthropic API, and an AWS infrastructure monitor powered by Amazon Bedrock Agents with natural-language health queries.
+
+Available for: Senior Software Engineer · Principal Engineer · Staff Engineer · Backend · Full-Stack · AI/ML Engineering roles
+
+## Core Skills
+
+- **Languages**: Java 8–25, Python 3.10+, TypeScript, PHP
+- **Frameworks**: Spring Boot, Spring WebFlux, Project Reactor, Next.js 15, React
+- **Cloud**: AWS (Lambda, EC2, ECS, Bedrock, API Gateway, CloudFront, S3, SNS, SQS, DynamoDB, CloudWatch, CDK)
+- **AI/ML**: Amazon Bedrock Agents, Claude API (Anthropic), MCP connectors, Prompt Engineering
+- **Architecture**: Microservices, Event-Driven, CQRS, Saga Pattern, Clean Architecture, DDD
+- **Databases**: PostgreSQL, MongoDB, Redis, DynamoDB
+- **DevOps**: Docker, Kubernetes, Terraform, AWS CDK, GitHub Actions, Grafana
+
+## Featured Projects
+
+### AWS Monitor Agent
+- Chat-based AWS health monitoring powered by Amazon Bedrock Agents + Claude 3.5 Haiku
+- 2 CDK stacks (AwsMonitorAgentStack + AwsMonitorFrontendStack), fully serverless
+- 11 action groups covering EC2, Lambda, CloudWatch, Logs Insights, X-Ray, ALB, CloudTrail, SSM
+- Multi-region support, 326 automated tests, < $0.02/month at rest
+- Source: https://github.com/silveiraSoft/aws-monitor
+- Article: https://adalbertosilveiranapoles.dev/blog/aws-monitor-bedrock-agents
+
+### JobHunter AI Agent
+- Fully autonomous job application pipeline running every Wednesday at 10am
+- Claude Haiku personalizes resume per job description (STAR-method, Match% scoring, ATS-optimized)
+- LinkedIn Easy Apply automation via Claude in Chrome; Gmail HTML digest via MCP
+- 6-phase pipeline: pre-flight → job search → resume gen → apply → email → live dashboard
+- Source: https://github.com/silveiraSoft/agent-linkedin-candidate
+- Article: https://adalbertosilveiranapoles.dev/blog/autonomous-job-agent-claude-ai
+
+## Experience
+
+- **3HTP Cloud Services** (2022–present) — Senior Java Backend Engineer. Built Talos identity-validation platform (voice biometrics, facial recognition, OTP) for banking; Distributed Complaints Management System on AWS SNS/SQS; AWS Monitor Bedrock Agent.
+- **Cooper Tec** (2021–2022) — Full-Stack Developer. Document Management System with Spring WebFlux + Angular; open-source PHP library contributions (brunoconte3/dev-utils).
+- **UniCesumar** (2019–2021) — Backend Java Developer. Academic management systems in Java/Spring for 300K+ students across Brazil.
+- **University of Angola (UCAN)** (2014–2019) — Software Engineer. University information systems, web portals.
+- **ETECSA** (2007–2013) — Software Engineer. Telecommunications billing and operations systems.
+
+## Education
+
+- M.Sc. Business Informatics — CUJAE (Havana, Cuba), 2013
+- B.Sc. Computer Sciences — University of Santiago de Cuba, 2006
+
+## Certifications
+
+- AWS Certified Solutions Architect – Professional
+- AWS Certified Developer – Associate
+- Oracle Certified Professional Java SE 11
+- Spring Professional Certification
+
+## Blog Articles
+
+- [Building an Autonomous Job Agent with Claude AI](https://adalbertosilveiranapoles.dev/blog/autonomous-job-agent-claude-ai)
+- [AWS Infrastructure Monitoring with Amazon Bedrock Agents](https://adalbertosilveiranapoles.dev/blog/aws-monitor-bedrock-agents)
+- [Spring WebFlux vs Spring MVC: When to Go Reactive](https://adalbertosilveiranapoles.dev/blog/spring-webflux-vs-mvc)
+- [Event-Driven Architecture on AWS: SNS, SQS, and the Saga Pattern](https://adalbertosilveiranapoles.dev/blog/event-driven-aws-sns-sqs-saga)

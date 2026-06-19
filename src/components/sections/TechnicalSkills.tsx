@@ -52,7 +52,7 @@ function SkillBar({ name, level, color, delay }: { name: string; level: number; 
           className={`skill-bar-fill bg-gradient-to-r ${c.bar}`}
           initial={{ width: 0 }}
           animate={inView ? { width: `${level}%` } : { width: 0 }}
-          transition={{ duration: 1.0, delay, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ duration: 1.0, delay, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] }}
         />
       </div>
     </div>

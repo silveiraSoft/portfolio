@@ -49,7 +49,7 @@ function CaseStudyCard({ study, index, inView }: { study: typeof CASE_STUDIES[0]
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+            transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] }}
             className="overflow-hidden"
           >
             <div className="px-5 md:px-6 pb-6 border-t border-border pt-5 space-y-5">

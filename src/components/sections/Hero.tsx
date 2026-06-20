@@ -91,7 +91,7 @@ export function Hero() {
           <motion.div variants={itemVariants} className="mb-6 flex justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-xs font-semibold text-primary-light tracking-wider uppercase">
               <Sparkles className="w-3.5 h-3.5" />
-              Available for Senior Engineering Roles
+              Open to Cloud, AI & Full-Stack Roles
             </span>
           </motion.div>
 

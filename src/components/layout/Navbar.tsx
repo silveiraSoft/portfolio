@@ -34,8 +34,17 @@ export function Navbar() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    // Defer the scroll until after the mobile drawer's close re-render/animation
+    // has been scheduled. On some Android browsers, calling scrollIntoView in the
+    // same tick as the state update that closes the drawer causes the smooth
+    // scroll to be silently dropped.
+    requestAnimationFrame(() => {
+      const el = document.querySelector(href) as HTMLElement | null;
+      if (!el) return;
+      const headerOffset = 80;
+      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
   };
 
   return (

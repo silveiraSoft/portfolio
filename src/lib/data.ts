@@ -42,7 +42,7 @@ export const SKILLS = [
       { name: "Java 8/11/17/21/25", level: 95 },
       { name: "Spring Boot", level: 95 },
       { name: "Spring WebFlux / Project Reactor", level: 90 },
-      { name: "Spring Security", level: 88 },
+      { name: "Spring Security / OAuth 2.0", level: 88 },
       { name: "Spring Cloud", level: 85 },
       { name: "Spring Data JPA / Hibernate", level: 90 },
       { name: "Microservices Architecture", level: 92 },
@@ -64,6 +64,8 @@ export const SKILLS = [
       { name: "Amazon Bedrock", level: 80 },
       { name: "AWS CDK", level: 75 },
       { name: "CloudFront", level: 82 },
+      { name: "Azure AD / Entra ID", level: 78 },
+      { name: "OAuth 2.0 / PKCE / MSAL", level: 80 },
     ],
   },
   {
@@ -272,7 +274,7 @@ export const FEATURED_PROJECTS = [
 
 Amazon Bedrock Agents orchestrate the reasoning — they parse natural language questions, call action-group Lambdas that query EC2, Lambda, and CloudWatch metrics, and return contextual summaries. The frontend is deployed on CloudFront/S3, serverless from top to bottom.`,
     github: "https://github.com/silveiraSoft/aws-monitor",
-    demo: null,
+    demo: "https://d2gfdp4qsgu81s.cloudfront.net",
     status: "live",
     year: "2025",
     stack: [
@@ -313,6 +315,65 @@ Amazon Bedrock Agents orchestrate the reasoning — they parse natural language 
     ],
     color: "from-indigo-600 to-violet-600",
     icon: "☁️",
+  },
+  {
+    id: "azure-msal-auth",
+    title: "Azure AD / Entra ID Auth Demo",
+    subtitle: "Enterprise SSO · OAuth 2.0 PKCE · Spring Security · RBAC",
+    featured: true,
+    badge: "🔐 Security",
+    description:
+      "Full-stack enterprise authentication system integrating Microsoft Azure AD (Entra ID) with a Next.js 14 frontend and a Spring Boot 3 REST API. Implements two OAuth 2.0 flows — PKCE for browser clients and Client Credentials for server-to-server — plus role-based access control (Admin/User), PostgreSQL persistence, and zero-trust API protection via Spring Security.",
+    longDescription: `Enterprise identity and access management is one of the highest-stakes areas of software engineering. This project demonstrates how to build it correctly end-to-end.
+
+The frontend uses MSAL.js (Microsoft Authentication Library) with the Authorization Code + PKCE flow — the industry-recommended approach for SPAs because it never exposes the client secret in the browser. The Spring Boot 3 backend validates Bearer tokens issued by Azure AD, enforces RBAC, and exposes protected endpoints that only Admin or User roles can access.
+
+A second flow — OAuth 2.0 Client Credentials — is wired for machine-to-machine communication, demonstrating that the same Entra ID tenant can serve both human users and automated services. PostgreSQL (via Neon serverless) stores user-session and role data, and the entire system is deployed on Vercel (frontend) + Render (backend) at zero infrastructure cost.`,
+    github: "https://github.com/silveiraSoft/azure-msal-nextjs-springboot-demo",
+    demo: "https://azure-msal-nextjs-springboot-demo.vercel.app",
+    status: "live",
+    year: "2025",
+    stack: [
+      "Next.js 14",
+      "TypeScript",
+      "MSAL.js",
+      "Spring Boot 3",
+      "Spring Security",
+      "Azure AD / Entra ID",
+      "OAuth 2.0 PKCE",
+      "Client Credentials Flow",
+      "PostgreSQL",
+      "Neon Serverless",
+      "Vercel",
+      "Render",
+    ],
+    metrics: [
+      { label: "Auth Flows", value: "2 (PKCE + CC)" },
+      { label: "User Roles", value: "Admin / User" },
+      { label: "Token Validation", value: "Spring Security" },
+      { label: "Deploy", value: "Vercel + Render" },
+    ],
+    architecture: {
+      diagram: "azure-msal-auth",
+      layers: [
+        "Next.js 14 SPA → MSAL.js Authorization Code + PKCE",
+        "Azure AD (Entra ID) → issues access & ID tokens",
+        "Spring Boot 3 API → Spring Security JWT validation",
+        "RBAC middleware → Admin / User role enforcement",
+        "PostgreSQL via Neon → user-session & role persistence",
+        "Client Credentials flow → M2M service-to-service auth",
+      ],
+    },
+    highlights: [
+      "PKCE flow (Proof Key for Code Exchange) — prevents authorization-code interception in SPAs without exposing client secrets",
+      "Client Credentials OAuth 2.0 flow for secure machine-to-machine service communication",
+      "Spring Security JWT filter validates Azure-issued Bearer tokens on every protected endpoint",
+      "Role-based access control (RBAC) — Admin vs User scopes enforced at the API layer",
+      "Step-by-step Azure App Registration guide and validated troubleshooting notes included",
+      "Full free-tier cloud deployment: Next.js on Vercel, Spring Boot on Render, DB on Neon",
+    ],
+    color: "from-blue-600 to-sky-500",
+    icon: "🔐",
   },
   {
     id: "job-agent",

@@ -77,6 +77,19 @@ export function Certifications() {
                 </div>
               )}
 
+              {/* Verify link */}
+              {cert.verifyUrl && cert.status === "active" && (
+                <a
+                  href={cert.verifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-amber-400/70 hover:text-amber-400 transition-colors mt-3 group/link"
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  <span>Verify credential</span>
+                </a>
+              )}
+
               {/* AWS Badge gradient hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl" />
             </motion.div>

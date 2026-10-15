@@ -160,6 +160,7 @@ export const CERTIFICATIONS = [
     icon: "aws",
     color: "#FF9900",
     year: "2026",
+    verifyUrl: "https://www.credly.com/badges/abdb1e03-de31-426e-bd73-93bea3add496",
   },
   {
     name: "AWS Certified Developer – Associate",

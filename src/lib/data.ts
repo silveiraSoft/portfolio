@@ -13,9 +13,9 @@ export const PERSONAL = {
     "Full-Stack Engineer",
   ],
   tagline:
-    "18+ years building enterprise-grade cloud-native systems. Specializing in Java, Spring Boot, AWS, and AI-powered automation.",
+    "18+ years building enterprise-grade cloud-native systems. Specializing in Java, Spring Boot, AWS, and AI-powered automation. AWS Certified AI Practitioner (AIF-C01).",
   summary:
-    "Senior Software Engineer with 18+ years of experience designing and delivering enterprise-grade, cloud-native applications across the full SDLC. Specialized in Java (8–25), Spring Boot, Spring WebFlux, and event-driven microservices on AWS — handling 50,000+ daily transactions at 99.9% uptime in production financial and identity-validation platforms. Active AI practitioner: built an autonomous job-application agent using Python and the Claude/Anthropic API, and an AWS infrastructure monitor powered by Amazon Bedrock with anomaly detection and natural-language incident summaries.",
+    "Senior Software Engineer with 18+ years of experience designing and delivering enterprise-grade, cloud-native applications across the full SDLC. Specialized in Java (8–25), Spring Boot, Spring WebFlux, and event-driven microservices on AWS — handling 50,000+ daily transactions at 99.9% uptime in production financial and identity-validation platforms. Active AI practitioner and AWS Certified AI Practitioner (AIF-C01): built an autonomous job-application agent using Python and the Claude/Anthropic API, and an AWS infrastructure monitor powered by Amazon Bedrock with anomaly detection and natural-language incident summaries.",
   email: "adalbertosn1982@gmail.com",
   phone: "+1 (812) 901-8687",
   location: "Hialeah, FL 33015",
@@ -156,7 +156,7 @@ export const CERTIFICATIONS = [
   {
     name: "AWS Certified AI Practitioner",
     issuer: "Amazon Web Services",
-    status: "in-progress",
+    status: "active",
     icon: "aws",
     color: "#FF9900",
     year: "2026",
